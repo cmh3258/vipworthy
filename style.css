@@ -1,8 +1,29 @@
+/*
+ * Custom stylesheet for Vip Worthy
+ * Created By: Chris Hume + Peter Silkowski (10/12/15)
+ */
 
-body{
-  background-color: white;
-  margin:0;
-}
+
+/* Base Styles */
+    body{
+      background-color: white;
+      margin:0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{}
+
+    p,li,a{}
+
+    button{}
+
+    input{}
+
+    ul{}
 
 /* Hero Image */
     .hero{
@@ -22,6 +43,7 @@ body{
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
     }
+
 
 /* Navigation */
     nav{
@@ -47,18 +69,18 @@ body{
     }
 
     /* Right side of navigation */
-    .nav-hrefs{
-      margin-left:3em;
-      float:left;
-      margin-top: 21px !important;
-    }
-    .nav-hrefs li{
-      margin-left:1em;
-    }
-    .nav-hrefs li a{
-      color: white;
-      font-family: Martel Sans;
-    }
+        .nav-hrefs{
+          margin-left:3em;
+          float:left;
+          margin-top: 21px !important;
+        }
+        .nav-hrefs li{
+          margin-left:1em;
+        }
+        .nav-hrefs li a{
+          color: white;
+          font-family: Martel Sans;
+        }
 
 
 /* Columns */
@@ -71,18 +93,19 @@ body{
     .col-3{
       width: 30%;
       float:left;
-      padding:1em;
+      /*padding:1em;*/
     }
 
-  /* Image container in rows */
-  .bibleStudyContainer{
+
+/* Image container in rows */
+    .bibleStudyContainer{
       height: 13em;
       width: 100%;
       overflow: hidden;
       margin-bottom: 2em;
     }
     .bibleStudyImg{
-      padding: 1em;
+      /*padding: 1em;*/
       max-width:100%;
       max-height:100%;
     }
