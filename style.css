@@ -1,0 +1,93 @@
+
+body{
+  background-color: white;
+  margin:0;
+}
+
+/* Hero Image */
+    .hero{
+      background-size: cover;
+      background-image: url('images/dock.jpg');
+      height: 34em;
+      margin-bottom: 3em;
+    }
+    .hero > div{
+      margin:0 auto;
+      text-align: center;
+      color:#3e3e3e;
+      position: absolute;
+      top: 32%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+/* Navigation */
+    nav{
+      background-color: #171717;
+    }
+    nav div{
+      overflow: auto;
+    }
+    nav ul{
+      padding: 15px;
+      float:left;
+          margin-top: 6px;
+    }
+    nav ul li{
+      display: inline;
+      color:#5b5b5b;
+    }
+    nav ul li a{
+      margin-top:-10px;
+    }
+    #title{
+      font-size:2em;
+    }
+
+    /* Right side of navigation */
+    .nav-hrefs{
+      margin-left:3em;
+      float:left;
+      margin-top: 21px !important;
+    }
+    .nav-hrefs li{
+      margin-left:1em;
+    }
+    .nav-hrefs li a{
+      color: white;
+      font-family: Martel Sans;
+    }
+
+
+/* Columns */
+    .row{
+      overflow: auto;
+      width: 80%;
+      margin: 0 auto;
+      margin-top:3em;
+    }
+    .col-3{
+      width: 30%;
+      float:left;
+      padding:1em;
+    }
+
+  /* Image container in rows */
+  .bibleStudyContainer{
+      height: 13em;
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 2em;
+    }
+    .bibleStudyImg{
+      padding: 1em;
+      max-width:100%;
+      max-height:100%;
+    }
+    .bibleStudyInfo{
+      padding: 0 2em 1em 2em;
+      text-align: left;
+    }
+
