@@ -86,12 +86,12 @@
 /* Columns */
     .row{
       overflow: auto;
-      width: 80%;
+      width: 90%;
       margin: 0 auto;
       margin-top:3em;
     }
     .col-3{
-      width: 30%;
+      width: 33%;
       float:left;
       /*padding:1em;*/
     }
@@ -99,10 +99,11 @@
 
 /* Image container in rows */
     .bibleStudyContainer{
-      height: 13em;
+      /*height: 13em;*/
       width: 100%;
       overflow: hidden;
       margin-bottom: 2em;
+      position: relative;
     }
     .bibleStudyImg{
       /*padding: 1em;*/
@@ -112,5 +113,21 @@
     .bibleStudyInfo{
       padding: 0 2em 1em 2em;
       text-align: left;
+      position: absolute;
+      top: 0;
+      background-color: white;
     }
 
+/* categories */
+    #categories .hero{
+      height: 22em;
+    }
+
+
+/* Footer */
+footer{
+  padding:3em;
+  background-color: #3a3a3a;
+  color:#d1d1d1;
+  margin-top:3em;
+}
