@@ -25,6 +25,11 @@
 
     ul{}
 
+    section{
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
 /* Hero Image */
     .hero{
       background-size: cover;
@@ -47,7 +52,7 @@
 
 /* Navigation */
     nav{
-      background-color: #171717;
+      background-color: #101010;
     }
     nav div{
       overflow: auto;
@@ -65,7 +70,12 @@
       margin-top:-10px;
     }
     #title{
-      font-size:2em;
+      font-size:21px;
+      margin-left:1.2em;
+    }
+    #title a{
+      color: white;
+      text-decoration: none;
     }
 
     /* Right side of navigation */
@@ -90,23 +100,32 @@
       margin: 0 auto;
       margin-top:3em;
     }
-    .col-3{
-      width: 33%;
+    .row .col-3{
+      /*width: 30.33%;*/
+      width: 100%;
       float:left;
       /*padding:1em;*/
     }
 
+/* Full Grid */
+  .full-grid{
+    overflow: auto;
+  }
+  .full-grid .col-3{
+    /*width: 33.33%;*/
+    width: 100%;
+    float: left;
+  }
 
-/* Image container in rows */
+
+/* Image container in rows 
     .bibleStudyContainer{
-      /*height: 13em;*/
       width: 100%;
       overflow: hidden;
       margin-bottom: 2em;
       position: relative;
     }
     .bibleStudyImg{
-      /*padding: 1em;*/
       max-width:100%;
       max-height:100%;
     }
@@ -116,18 +135,141 @@
       position: absolute;
       top: 0;
       background-color: white;
-    }
+    }*/
 
 /* categories */
     #categories .hero{
       height: 22em;
     }
 
+    section h2{
+      text-align: center;
+      /*font-size: 4em;*/
+    }
+
+
+    /* previewExperience */
+        .previewExperience{
+          position: relative;
+          overflow: hidden;
+          height:30em;
+        }
+        .previewExperience .backgroundImage > img{
+          height: 100%;
+        }
+        .previewTopInfo{
+          position: absolute;
+          top:0;
+          background-color: #101010;
+          /*padding:1em;*/
+          width: 100%;
+        }
+        /*.previewTopInfo > div{
+          position:relative;
+          width: 100%;
+        }*/
+        .previewTopInfo h3{
+          color:white;
+          text-align: center;
+              /*font-size: 3em;*/
+        }
+        .previewBottomInfo{
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          background-color: #F1B930;
+          padding: 1em;
+        }
+        .previewBottomInfo h5{
+          /*font-size: 2em;*/
+        }
+        .previewBottomInfo h5 a{
+          color: white;
+        }
+
+    /* How It works */
+        #howItWorks{
+          background-color: #101010;
+          padding:1em;
+        }
+        #howItWorks h2{
+          color: white;
+          /*font-size: 5em;*/
+        }
+        #howItWorks h3{
+          color: #F1B930;
+          /*font-size: 3em;*/
+        }
+        #howItWorks h4, #howItWorks p{
+          color: white;
+          /*font-size: 2em;*/
+        }
+
+        #howItWorks .col-3{
+          text-align: center;
+        }
+        #howItWorks .col-3 > div{
+          width: 80%;
+          margin:0 auto;
+        }
+
+    /* Preview Categories */
+        .previewCategory{
+          position: relative;
+          overflow: auto;
+          height:24em;
+          /*height: 50em;*/
+        }
+        .previewCategory .backgroundImage > img{
+          height: 100%;
+        }
+        .previewCenterInfo{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -33px;
+          margin-left: -20px;
+          /*margin-top: -130px;*/
+          /*margin-left: -75px;*/
+        }
+        .previewCenterInfo h3{
+          color: white;
+          /*font-size: 5em;*/
+        }
+
 
 /* Footer */
 footer{
   padding:3em;
-  background-color: #3a3a3a;
+  background-color: #101010;
   color:#d1d1d1;
   margin-top:3em;
+  /*font-size: 3em;*/
 }
+
+
+
+  @media(min-width: 800px){
+    .row .col-3{
+      width: 45%;
+      padding:1em;
+    }
+    .full-grid .col-3{
+      width: 50%;
+    }
+  }
+
+  @media(min-width: 1150px){
+    .row .col-3{
+      width: 30.1%;
+      padding:1em;
+    }
+    .full-grid .col-3{
+      width: 33.33%;
+    }
+
+  }
+
+
+
+
