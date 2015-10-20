@@ -156,6 +156,7 @@
         }
         .previewExperience .backgroundImage > img{
           height: 100%;
+          overflow: hidden;
         }
         .previewTopInfo{
           position: absolute;
@@ -178,7 +179,7 @@
           bottom: 0;
           width: 100%;
           background-color: #F1B930;
-          padding: 1em;
+          /*padding: 1em;*/
         }
         .previewBottomInfo h5{
           /*font-size: 2em;*/
@@ -186,6 +187,65 @@
         .previewBottomInfo h5 a{
           color: white;
         }
+
+        /* categories */ 
+            #categories .previewExperience{
+              height: 26em;
+            }
+            #categories .previewCategory:hover{
+
+            }
+            .overlay{
+              background-color: rgba(10,10,10,.7);
+              position: absolute;
+              top: 0;
+              left: 0;
+              color: #fff;
+              z-index: 100;
+              -webkit-transition: all 300ms ease-out;
+              -moz-transition: all 300ms ease-out;
+              -o-transition: all 300ms ease-out;
+              -ms-transition: all 300ms ease-out;
+              transition: all 300ms ease-out;
+              opacity: 0;
+              width: 100%;
+              height: 100%;
+              /*padding: 130px 20px;*/
+              /*padding: 4em 4em;*/
+              margin-top: 59px;
+              padding-top: 3em;
+              padding-left: 4em;
+
+              transition-property: opacity;
+              transition-duration: .5s;
+              transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+              cursor: pointer;
+            }
+            .overlay:hover{
+              opacity: 1;
+            }
+
+            #categories .previewBottomInfo{
+              background-color: inherit;
+              margin-bottom: 21px;
+            }
+            #categories .previewBottomInfo h5{
+              text-align: center;
+              border: 2px solid white;
+              padding: 1em;
+              width: 15em;
+              margin: 0 auto;
+              border-radius: 32px;
+          }
+          #categories .previewCenterInfo{
+            margin-top: -72px;
+            margin-left: -60px;
+          }
+          #categories .previewCenterInfo h3{
+            padding: 50px 45px;
+            border: 2px solid white;
+            border-radius: 100%;
+          }
 
     /* How It works */
         #howItWorks{
@@ -222,6 +282,7 @@
         }
         .previewCategory .backgroundImage > img{
           height: 100%;
+          overflow: hidden;
         }
         .previewCenterInfo{
           position: absolute;
