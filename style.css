@@ -29,6 +29,9 @@
       margin-top: 2em;
       margin-bottom: 2em;
     }
+    section.halfImghalfInfo{
+      margin: 0;
+    }
 
 /* Hero Image */
     .hero{
@@ -112,30 +115,27 @@
     overflow: auto;
   }
   .full-grid .col-3{
-    /*width: 33.33%;*/
     width: 100%;
     float: left;
   }
 
+  .full-grid .col-2{
+    float: left;
+  }
+  .full-grid .col-2 > div{
+    position: relative;
+    overflow: auto;
+    height:28em;
+    width: 100%;
+  }
+  .full-grid .col-2 > div img{
+    width: 100%;
+    overflow: hidden;
+  }
+  .full-grid .col-2 > div > div{
+    padding: 4em;
+  }
 
-/* Image container in rows 
-    .bibleStudyContainer{
-      width: 100%;
-      overflow: hidden;
-      margin-bottom: 2em;
-      position: relative;
-    }
-    .bibleStudyImg{
-      max-width:100%;
-      max-height:100%;
-    }
-    .bibleStudyInfo{
-      padding: 0 2em 1em 2em;
-      text-align: left;
-      position: absolute;
-      top: 0;
-      background-color: white;
-    }*/
 
 /* categories */
     #categories .hero{
@@ -144,7 +144,6 @@
 
     section h2{
       text-align: center;
-      /*font-size: 4em;*/
     }
 
 
@@ -162,31 +161,24 @@
           position: absolute;
           top:0;
           background-color: #101010;
-          /*padding:1em;*/
           width: 100%;
         }
-        /*.previewTopInfo > div{
-          position:relative;
-          width: 100%;
-        }*/
         .previewTopInfo h3{
           color:white;
           text-align: center;
-              /*font-size: 3em;*/
         }
         .previewBottomInfo{
           position: absolute;
           bottom: 0;
           width: 100%;
           background-color: #F1B930;
-          /*padding: 1em;*/
         }
         .previewBottomInfo h5{
-          /*font-size: 2em;*/
         }
         .previewBottomInfo h5 a{
           color: white;
         }
+
 
         /* categories */ 
             #categories .previewExperience{
@@ -210,12 +202,9 @@
               opacity: 0;
               width: 100%;
               height: 100%;
-              /*padding: 130px 20px;*/
-              /*padding: 4em 4em;*/
               margin-top: 59px;
               padding-top: 3em;
               padding-left: 4em;
-
               transition-property: opacity;
               transition-duration: .5s;
               transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
@@ -247,6 +236,7 @@
             border-radius: 100%;
           }
 
+
     /* How It works */
         #howItWorks{
           background-color: #101010;
@@ -254,7 +244,6 @@
         }
         #howItWorks h2{
           color: white;
-          /*font-size: 5em;*/
         }
         #howItWorks h3{
           color: #F1B930;
@@ -262,7 +251,6 @@
         }
         #howItWorks h4, #howItWorks p{
           color: white;
-          /*font-size: 2em;*/
         }
 
         #howItWorks .col-3{
@@ -278,7 +266,6 @@
           position: relative;
           overflow: auto;
           height:24em;
-          /*height: 50em;*/
         }
         .previewCategory .backgroundImage > img{
           height: 100%;
@@ -290,32 +277,56 @@
           left: 50%;
           margin-top: -33px;
           margin-left: -20px;
-          /*margin-top: -130px;*/
-          /*margin-left: -75px;*/
         }
         .previewCenterInfo h3{
           color: white;
-          /*font-size: 5em;*/
+        }
+
+
+    /* Detail Page */
+        #details .hero{
+          margin-bottom: 0;
+        }
+        .hero .infoRight{
+          left: initial;
+          right: -10%;
+          background: black;
+          padding: 2em 5em;
+          float: right;
+          width: 18em;
+        }
+        .banner{
+          background-color: #2E233E;
+          margin: 0;
+          overflow: auto;
+          padding: 2.5em;
+        }
+        .banner h2,
+        .banner h4{
+          color: white;
+          text-align: center;
         }
 
 
 /* Footer */
-footer{
-  padding:3em;
-  background-color: #101010;
-  color:#d1d1d1;
-  margin-top:3em;
-  /*font-size: 3em;*/
-}
+    footer{
+      padding:3em;
+      background-color: #101010;
+      color:#d1d1d1;
+      margin-top:3em;
+    }
 
 
-
+/* Responsiveness */
   @media(min-width: 800px){
     .row .col-3{
       width: 45%;
       padding:1em;
     }
     .full-grid .col-3{
+      width: 50%;
+    }
+    .full-grid .col-2{
       width: 50%;
     }
   }
@@ -328,7 +339,6 @@ footer{
     .full-grid .col-3{
       width: 33.33%;
     }
-
   }
 
 
