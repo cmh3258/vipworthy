@@ -3,6 +3,33 @@
  * Created By: Chris Hume + Peter Silkowski (10/12/15)
  */
 
+@font-face {
+  font-family: GarSmbdIt;
+  src: url(fonts/Garamond/GaramondPremrPro-SmbdIt.otf);
+}
+@font-face {
+  font-family: GarCapt;
+  src: url(fonts/Garamond/GaramondPremrPro-Capt.otf);
+}
+@font-face {
+  font-family: GarSmbItSubh;
+  src: url(fonts/Garamond/GaramondPremrPro-SmbdItSubh.otf);
+}
+
+
+@font-face {
+  font-family: AkzRegular;
+  src: url(fonts/AkzidenzGrotesk/AkzidenzGrotesk-Regular.otf);
+}
+@font-face {
+  font-family: AkzLightCond;
+  src: url(fonts/AkzidenzGrotesk/AkzidenzGrotesk-LightCond.otf);
+}
+@font-face {
+  font-family: AkzMedium;
+  src: url(fonts/AkzidenzGrotesk/AkzidenzGrotesk-Medium.otf);
+}
+
 
 /* Base Styles */
     body{
@@ -50,6 +77,14 @@
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
+    }
+    h1{
+      font-family: AkzLightCond;
+      font-size: 38px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      color: white;
+      text-transform: uppercase;
     }
 
 
@@ -144,6 +179,10 @@
 
     section h2{
       text-align: center;
+      font-family: AkzLightCond;
+      font-size: 36px;
+      font-weight: 500;
+      letter-spacing: 3px;
     }
 
 
@@ -151,7 +190,10 @@
         .previewExperience{
           position: relative;
           overflow: hidden;
-          height:30em;
+          /*height:30em;*/
+          height: 336px;
+          width: 336px;
+          margin: 0 auto;
         }
         .previewExperience .backgroundImage > img{
           height: 100%;
@@ -160,12 +202,15 @@
         .previewTopInfo{
           position: absolute;
           top:0;
-          background-color: #101010;
+          /*background-color: #101010;*/
           width: 100%;
+          background-color: rgba(0,0,0,.3);
         }
         .previewTopInfo h3{
           color:white;
           text-align: center;
+          font-family: GarSmbdIt;
+          font-size: 24px;
         }
         .previewBottomInfo{
           position: absolute;
@@ -307,6 +352,66 @@
           text-align: center;
         }
 
+  /* Coming Soon */
+      #comingsoon{
+        background-color: #fafafa;
+      }
+      #comingsoon .hero{
+        margin-bottom: 0em;
+      }
+
+      /* Form */
+          #comingsoon input{
+            padding: 1em;
+            border: 0;
+            box-shadow: 0;
+            color: #1E162A;
+            font-size: 14px
+          }
+          #comingsoon input:focus {
+            outline:none !important;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(167, 235, 120, .6);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(167, 235, 120, .6);
+            -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.075), 0 0 0px rgba(167, 235, 120, .6);
+            box-shadow: inset 0 0px 0px rgba(0,0,0,.075), 0 0 0px rgba(167, 235, 120, .6);
+            border:1px solid #F5A623 !important;
+            width: 156px;
+          }
+          #comingsoon button{
+            background-color: #F5A623;
+            color: white;
+            padding: 1em;
+            border: 0;
+            width: 140.5px;
+            font-family: AkzMedium;
+            font-size: 14px;
+          }
+
+      /* How It Works Section*/
+          #comingsoon #howItWorks{
+            margin-top:0;
+            margin-bottom: 3em;
+          }
+          #comingsoon #howItWorks{
+            background-color: inherit;
+          }
+          #comingsoon #howItWorks > div{
+            border:3px solid #1E162A;
+          }
+          #comingsoon #howItWorks h3, 
+          #comingsoon #howItWorks h4,
+          #comingsoon #howItWorks p{
+            color: #1E162A;
+          }
+          #comingsoon #howItWorks h3{
+            border: 2px solid #F1B930;
+            border-radius: 100%;
+            padding: 18px 9px 0px;
+            width: 40px;
+            height: 40px;
+            margin: 0 auto;
+          }
+
 
 /* Footer */
     footer{
@@ -333,8 +438,10 @@
 
   @media(min-width: 1150px){
     .row .col-3{
-      width: 30.1%;
-      padding:1em;
+      /*width: 30.1%;*/
+      /*padding:1em;*/
+      width: 28.1%;
+      padding: 2em;
     }
     .full-grid .col-3{
       width: 33.33%;
