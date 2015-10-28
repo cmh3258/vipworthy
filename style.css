@@ -15,6 +15,10 @@
   font-family: GarSmbItSubh;
   src: url(fonts/Garamond/GaramondPremrPro-SmbdItSubh.otf);
 }
+@font-face {
+  font-family: GarItalic;
+  src: url(fonts/Garamond/GaramondPremrPro-It.otf);
+}
 
 
 @font-face {
@@ -35,6 +39,7 @@
     body{
       background-color: white;
       margin:0;
+        background-color: #fafafa;
     }
 
     h1,
@@ -63,7 +68,7 @@
 /* Hero Image */
     .hero{
       background-size: cover;
-      background-image: url('images/dock.jpg');
+      background-image: url('images/ocean.png');
       height: 34em;
       margin-bottom: 3em;
     }
@@ -74,6 +79,8 @@
       position: absolute;
       top: 32%;
       left: 50%;
+        top:41%;
+
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
@@ -99,6 +106,12 @@
       padding: 15px;
       float:left;
           margin-top: 6px;
+
+        padding: 6px;
+        float: left;
+        margin-top: 9px;
+        margin-bottom: 8px;
+
     }
     nav ul li{
       display: inline;
@@ -216,13 +229,52 @@
           position: absolute;
           bottom: 0;
           width: 100%;
-          background-color: #F1B930;
+          /*background-color: #F1B930;*/
         }
         .previewBottomInfo h5{
         }
         .previewBottomInfo h5 a{
           color: white;
         }
+      
+
+        /* can select a preview item */
+        .selectPreview:hover{
+          cursor: pointer;
+          /*background-color: rgba(0,0,0,.5);*/
+          opacity: .9;
+        }
+
+    /* when preview info has all three sections */
+    .fullDetails .previewTopInfo{
+      background-color: inherit;
+    }
+    .fullDetails .previewTopInfo h3{
+      font-family: AkzRegular;
+      font-size: 20px;
+    }
+    .fullDetails .previewCenterInfo h3{ 
+     font-family: AkzLightCond;
+     font-size: 24px;
+    }
+    .fullDetails .previewBottomInfo{
+      font-family: GarItalic;
+      font-size: 16px;
+    }
+    .fullDetails .previewBottomInfo h5{
+      font-family: GarItalic;
+      font-size: 16px;
+      background: inherit;
+      text-align: center;
+      border: 1px solid white;
+      width: 80%;
+      margin: 0 auto;
+      padding: 1em;
+      margin-bottom: 1em;
+    }
+    .fullDetails .previewBottomInfo h5 a{
+      text-decoration: none;
+    }
 
 
         /* categories */ 
@@ -281,22 +333,57 @@
             border-radius: 100%;
           }
 
-
     /* How It works */
-        #howItWorks{
-          background-color: #101010;
-          padding:1em;
-        }
         #howItWorks h2{
           color: white;
         }
         #howItWorks h3{
           color: #F1B930;
+          font-family:GarSmbItSubh;
+          font-size:26px;
           /*font-size: 3em;*/
         }
         #howItWorks h4, #howItWorks p{
           color: white;
         }
+        #howItWorks h4{
+          font-size: 20px;
+          font-family: AkzRegular;
+        }
+        #howItWorks p{
+          font-size: 14px;
+          font-family: GarCapt;
+        }
+
+        #howItWorks{
+          background-color: #101010;
+          padding:1em;
+          margin-top:0;
+          margin-bottom: 3em;
+        }
+        #howItWorks{
+          background-color: inherit;
+        }
+        #howItWorks > div{
+          border:3px solid #1E162A;
+        }
+        #howItWorks h3, 
+        #howItWorks h4,
+        #howItWorks p{
+          color: #1E162A;
+        }
+        #howItWorks h3{
+          border: 2px solid #F1B930;
+          border-radius: 100%;
+          padding: 16px 8px 0px;
+          width: 40px;
+          height: 40px;
+          margin: 0 auto;
+        }
+        #howItWorks h4{
+          margin-bottom: 12px;
+        }
+
 
         #howItWorks .col-3{
           text-align: center;
@@ -352,12 +439,15 @@
           text-align: center;
         }
 
+
   /* Coming Soon */
-      #comingsoon{
-        background-color: #fafafa;
-      }
       #comingsoon .hero{
         margin-bottom: 0em;
+        height: 38em;
+      }
+     
+      .emphasis{
+        font-family:GarSmbdIt;
       }
 
       /* Form */
@@ -366,7 +456,8 @@
             border: 0;
             box-shadow: 0;
             color: #1E162A;
-            font-size: 14px
+            font-size: 14px;
+            width: 18em;
           }
           #comingsoon input:focus {
             outline:none !important;
@@ -375,7 +466,7 @@
             -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.075), 0 0 0px rgba(167, 235, 120, .6);
             box-shadow: inset 0 0px 0px rgba(0,0,0,.075), 0 0 0px rgba(167, 235, 120, .6);
             border:1px solid #F5A623 !important;
-            width: 156px;
+            
           }
           #comingsoon button{
             background-color: #F5A623;
@@ -388,29 +479,7 @@
           }
 
       /* How It Works Section*/
-          #comingsoon #howItWorks{
-            margin-top:0;
-            margin-bottom: 3em;
-          }
-          #comingsoon #howItWorks{
-            background-color: inherit;
-          }
-          #comingsoon #howItWorks > div{
-            border:3px solid #1E162A;
-          }
-          #comingsoon #howItWorks h3, 
-          #comingsoon #howItWorks h4,
-          #comingsoon #howItWorks p{
-            color: #1E162A;
-          }
-          #comingsoon #howItWorks h3{
-            border: 2px solid #F1B930;
-            border-radius: 100%;
-            padding: 18px 9px 0px;
-            width: 40px;
-            height: 40px;
-            margin: 0 auto;
-          }
+          
 
 
 /* Footer */
@@ -419,6 +488,8 @@
       background-color: #101010;
       color:#d1d1d1;
       margin-top:3em;
+      font-family: GarCapt;
+      text-align: center;
     }
 
 
