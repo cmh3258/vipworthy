@@ -39,7 +39,7 @@
     body{
       background-color: white;
       margin:0;
-        background-color: #fafafa;
+      background-color: white;
     }
 
     h1,
@@ -71,6 +71,9 @@
       background-image: url('images/ocean.png');
       height: 34em;
       margin-bottom: 3em;
+      /*background-position: 0em -8em;*/
+      /*background-position: -25em -8em;*/
+          background-position: -25em 0em;
     }
     .hero > div{
       margin:0 auto;
@@ -79,7 +82,8 @@
       position: absolute;
       top: 32%;
       left: 50%;
-        top:41%;
+        /*top:41%;*/
+        top: 56%;
 
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -97,7 +101,7 @@
 
 /* Navigation */
     nav{
-      background-color: #101010;
+      background-color: #1E162A;
     }
     nav div{
       overflow: auto;
@@ -143,19 +147,26 @@
           font-family: Martel Sans;
         }
 
+/* Main - acts like a container */
+  main{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 3em;
+    max-width: 1400px;
+  }
 
 /* Columns */
     .row{
       overflow: auto;
       width: 90%;
       margin: 0 auto;
-      margin-top:3em;
+      /*margin-top:3em;*/
     }
     .row .col-3{
-      /*width: 30.33%;*/
       width: 100%;
       float:left;
-      /*padding:1em;*/
+      margin-bottom: 1em;
+      overflow: hidden;
     }
 
 /* Full Grid */
@@ -196,6 +207,7 @@
       font-size: 36px;
       font-weight: 500;
       letter-spacing: 3px;
+      /*margin-bottom: 0em;*/
     }
 
 
@@ -205,7 +217,8 @@
           overflow: hidden;
           /*height:30em;*/
           height: 336px;
-          width: 336px;
+          max-width: 336px;
+          width: 100%;
           margin: 0 auto;
         }
         .previewExperience .backgroundImage > img{
@@ -222,8 +235,9 @@
         .previewTopInfo h3{
           color:white;
           text-align: center;
-          font-family: GarSmbdIt;
-          font-size: 24px;
+          font-family: AkzRegular;
+          font-size: 22px;
+          font-weight: 500;
         }
         .previewBottomInfo{
           position: absolute;
@@ -334,44 +348,21 @@
           }
 
     /* How It works */
-        #howItWorks h2{
-          color: white;
-        }
-        #howItWorks h3{
-          color: #F1B930;
-          font-family:GarSmbItSubh;
-          font-size:26px;
-          /*font-size: 3em;*/
-        }
-        #howItWorks h4, #howItWorks p{
-          color: white;
-        }
-        #howItWorks h4{
-          font-size: 20px;
-          font-family: AkzRegular;
-        }
-        #howItWorks p{
-          font-size: 14px;
-          font-family: GarCapt;
-        }
-
-        #howItWorks{
-          background-color: #101010;
-          padding:1em;
-          margin-top:0;
-          margin-bottom: 3em;
-        }
-        #howItWorks{
-          background-color: inherit;
-        }
-        #howItWorks > div{
-          border:3px solid #1E162A;
-        }
         #howItWorks h3, 
         #howItWorks h4,
         #howItWorks p{
           color: #1E162A;
         }
+        #howItWorks h2{
+          color: white;
+        }
+        #howItWorks h3{
+          /*color: #F1B930;*/
+          font-family:GarSmbItSubh;
+          font-size:26px;
+          /*font-size: 3em;*/
+        }
+        
         #howItWorks h3{
           border: 2px solid #F1B930;
           border-radius: 100%;
@@ -384,9 +375,35 @@
           margin-bottom: 12px;
         }
 
+        #howItWorks h4{
+          font-size: 20px;
+          font-family: AkzRegular;
+        }
+        #howItWorks p{
+          font-size: 14px;
+          font-family: GarCapt;
+        }
+
+        #howItWorks{
+          background-color: #101010;
+          margin: 0 auto;
+          margin-bottom: 4em;
+          margin-top: 3em;
+          width: 93%;
+        }
+        #howItWorks{
+          background-color: inherit;
+        }
+        #howItWorks > div{
+          border:3px solid #1E162A;
+        }
+        
+
 
         #howItWorks .col-3{
           text-align: center;
+          width: 100%;
+          padding: 1em 0em 1em;
         }
         #howItWorks .col-3 > div{
           width: 80%;
@@ -443,7 +460,8 @@
   /* Coming Soon */
       #comingsoon .hero{
         margin-bottom: 0em;
-        height: 38em;
+        /*height: 38em;*/
+        height: 27em;
       }
      
       .emphasis{
@@ -473,7 +491,9 @@
             color: white;
             padding: 1em;
             border: 0;
-            width: 140.5px;
+            /*width: 140.5px;*/
+            /*width: 100%;*/
+            width: 18em;
             font-family: AkzMedium;
             font-size: 14px;
           }
@@ -492,6 +512,27 @@
       text-align: center;
     }
 
+  
+  @media(min-width: 369px){
+    .hero{
+      background-position: -8em 0em;
+    }
+  }
+
+  @media(min-width: 642px){
+    .hero{
+      background-position: 0em 0em;
+    }
+  }
+
+  @media(min-width: 774px){
+    .row .col-3{
+      width: 45%;
+      padding:1em;
+    }
+  }
+
+
 
 /* Responsiveness */
   @media(min-width: 800px){
@@ -509,13 +550,33 @@
 
   @media(min-width: 1150px){
     .row .col-3{
-      /*width: 30.1%;*/
-      /*padding:1em;*/
-      width: 28.1%;
+      /*width: 28.1%;*/
+      width: 26.1%;
       padding: 2em;
     }
     .full-grid .col-3{
       width: 33.33%;
+    }
+    #howItWorks .col-3{
+      text-align: center;
+      /*width: 27%;*/
+      width: 33%;
+    }
+    #comingsoon button{
+      width: 140.5px;
+    }
+  }
+
+  @media(min-width: 1383px){
+    #comingsoon .hero{
+      height: 38em;
+      background-position: 0em -8em;
+    }
+    .hero > div{
+      top:41%;
+    }
+    .row .col-3{
+      width: 27.9%;
     }
   }
 
