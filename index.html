@@ -132,7 +132,7 @@
 
         <div class="row">   
           <div class="col-3">
-            <div class="previewExperience selectPreview">
+            <div class="previewExperience selectPreview" id="diningButton">
               <div class="backgroundImage">
                 <img src="images/food.jpeg" alt="Dining">
               </div>
@@ -146,7 +146,7 @@
           </div>
 
           <div class="col-3">
-            <div class="previewExperience selectPreview">
+            <div class="previewExperience selectPreview" id="retailButton">
               <div class="backgroundImage">
                 <img src="images/retail.png" alt="Retail">
               </div>
@@ -160,7 +160,7 @@
           </div>
 
           <div class="col-3">
-            <div class="previewExperience selectPreview">
+            <div class="previewExperience selectPreview" id="sportsButton">
               <div class="backgroundImage">
                 <img src="images/kobe.jpg" alt="Sports">
               </div>
@@ -174,7 +174,7 @@
           </div>
 
           <div class="col-3">
-            <div class="previewExperience selectPreview">
+            <div class="previewExperience selectPreview" id="festivalButton">
               <div class="backgroundImage">
                 <img src="images/festivals.png" alt="Festivals">
               </div>
@@ -185,7 +185,7 @@
           </div>
 
           <div class="col-3">
-            <div class="previewExperience selectPreview">
+            <div class="previewExperience selectPreview" id="adventureButton">
               <div class="backgroundImage">
                 <img src="images/jamaica.jpeg" alt="Adventure">
               </div>
@@ -196,7 +196,7 @@
           </div>
 
           <div class="col-3">
-            <div class="previewExperience selectPreview">
+            <div class="previewExperience selectPreview" id="travelButton">
               <div class="backgroundImage">
                 <img src="images/travel.jpeg" alt="Travel">
               </div>
@@ -207,7 +207,7 @@
           </div>
 
           <div class="col-3">
-            <div class="previewExperience selectPreview">
+            <div class="previewExperience selectPreview" id="spaButton">
               <div class="backgroundImage">
                 <img src="images/spa.jpeg" alt="Spa & Yoga">
               </div>
@@ -218,7 +218,7 @@
           </div>
 
           <div class="col-3">
-            <div class="previewExperience selectPreview">
+            <div class="previewExperience selectPreview" id="giftsButton">
               <div class="backgroundImage">
                 <img src="images/pearl.jpg" alt="Gifts">
               </div>
@@ -229,7 +229,7 @@
           </div>
 
           <div class="col-3">
-            <div class="previewExperience selectPreview">
+            <div class="previewExperience selectPreview" id="entertainmentButton">
               <div class="backgroundImage">
                 <img src="images/entertainment.png" alt="Entertainment">
               </div>
@@ -248,6 +248,39 @@
     <footer>
       <h5>Interested? Sign Up or Contact Us</h5>
     </footer>
+
+
+
+
+    <script type="text/javascript">
+      document.getElementById("diningButton").onclick = function () {
+          location.href = "/categories/dining.html";
+      };
+      document.getElementById("retailButton").onclick = function () {
+          location.href = "/categories/retail.html";
+      };
+      document.getElementById("sportsButton").onclick = function () {
+          location.href = "/categories/sports.html";
+      };
+      document.getElementById("festivalButton").onclick = function () {
+          location.href = "/categories/festivals.html";
+      };
+      document.getElementById("adventureButton").onclick = function () {
+          location.href = "/categories/adventure.html";
+      };
+      document.getElementById("travelButton").onclick = function () {
+          location.href = "/categories/travel.html";
+      };
+      document.getElementById("spaButton").onclick = function () {
+          location.href = "/categories/spaandyoga.html";
+      };
+      document.getElementById("giftsButton").onclick = function () {
+          location.href = "/categories/gifts.html";
+      };
+      document.getElementById("entertainmentButton").onclick = function () {
+          location.href = "/categories/entertainment.html";
+      };
+    </script>
 
 
   </body>
