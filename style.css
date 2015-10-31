@@ -12,6 +12,10 @@
   src: url(fonts/Garamond/GaramondPremrPro-Capt.otf);
 }
 @font-face {
+  font-family: GarItCapt;
+  src: url(fonts/Garamond/GaramondPremrPro-ItCapt.otf);
+}
+@font-face {
   font-family: GarSmbItSubh;
   src: url(fonts/Garamond/GaramondPremrPro-SmbdItSubh.otf);
 }
@@ -19,7 +23,14 @@
   font-family: GarItalic;
   src: url(fonts/Garamond/GaramondPremrPro-It.otf);
 }
-
+@font-face {
+  font-family: GarLtDisp;
+  src: url(fonts/Garamond/GaramondPremrPro-LtDisp.otf);
+}
+@font-face {
+  font-family: GarRegular;
+  src: url(fonts/Garamond/GaramondPremrPro.otf);
+}
 
 @font-face {
   font-family: AkzRegular;
@@ -183,16 +194,17 @@
   }
   .full-grid .col-2 > div{
     position: relative;
-    overflow: auto;
-    height:28em;
+    overflow: hidden;
+    height:24em;
     width: 100%;
   }
   .full-grid .col-2 > div img{
-    width: 100%;
+    /*width: 100%;*/
+    height: 100%;
     overflow: hidden;
   }
   .full-grid .col-2 > div > div{
-    padding: 4em;
+    padding: 1em 4em;
   }
 
 
@@ -250,13 +262,16 @@
         .previewBottomInfo h5 a{
           color: white;
         }
-      
-
+        
+        .selectPreview{
+          transition: opacity .25s ease-in-out;
+          -moz-transition: opacity .25s ease-in-out;
+          -webkit-transition: opacity .25s ease-in-out;
+        }
         /* can select a preview item */
         .selectPreview:hover{
           cursor: pointer;
-          /*background-color: rgba(0,0,0,.5);*/
-          opacity: .9;
+          opacity: .8;
         }
 
     /* when preview info has all three sections */
@@ -285,19 +300,29 @@
       margin: 0 auto;
       padding: 1em;
       margin-bottom: 1em;
+      color: white;
+      transition: all .25s ease-in-out;
+      -moz-transition: all .25s ease-in-out;
+      -webkit-transition: all .25s ease-in-out;
+    }
+    .fullDetails .previewBottomInfo h5:hover{
+      background-color: white;
+      cursor: pointer;
+      color: #1E162A !important;
     }
     .fullDetails .previewBottomInfo h5 a{
       text-decoration: none;
+      color: inherit;
     }
 
 
         /* categories */ 
-            #categories .previewExperience{
+            /*#categories .previewExperience{
               height: 26em;
             }
             #categories .previewCategory:hover{
 
-            }
+            }*/
             .overlay{
               background-color: rgba(10,10,10,.7);
               position: absolute;
@@ -325,7 +350,7 @@
               opacity: 1;
             }
 
-            #categories .previewBottomInfo{
+            /*#categories .previewBottomInfo{
               background-color: inherit;
               margin-bottom: 21px;
             }
@@ -344,7 +369,7 @@
           #categories .previewCenterInfo h3{
             padding: 50px 45px;
             border: 2px solid white;
-            border-radius: 100%;
+            border-radius: 100%;*/
           }
 
     /* How It works */
@@ -433,8 +458,12 @@
 
 
     /* Detail Page */
+        #details main{
+           width: 87%;
+        }
         #details .hero{
           margin-bottom: 0;
+          background-image: url('images/Kyle-Field-2.jpg');
         }
         .hero .infoRight{
           left: initial;
@@ -444,17 +473,81 @@
           float: right;
           width: 18em;
         }
-        .banner{
-          background-color: #2E233E;
-          margin: 0;
-          overflow: auto;
-          padding: 2.5em;
+        #details h3{
+          font-family: AkzLightCond;
+          color: #252525;
+          font-size: 36px;
         }
-        .banner h2,
-        .banner h4{
-          color: white;
-          text-align: center;
+        #details p{
+          font-size: 16px;
+          color: #252525;
+          font-family: GarRegular;
+          line-height: 28px;
         }
+
+        /* Details List */
+          #details ul{
+            padding-left: 11px;
+          }
+          #details li{
+            font-size: 16px;
+            color: #252525;
+            line-height: 32px;
+            font-family: GarCapt;
+          }
+
+
+        /* Full Width Banner */
+            .banner{
+              background-color: #1E162A;
+              margin: 0;
+              overflow: hidden;
+              height: 104px;
+            }
+            .banner h2,
+            .banner h4{
+              color: white;
+              text-align: center;
+            }
+
+            .banner .left{
+              float: left;
+              width: 65%;
+              margin-left:6em;
+            }
+            .banner .right{
+              float: right;
+              width: 28%;
+              background-color: #F5A623;
+              height: 100%;
+            }
+            .banner .right h3{
+              margin-top: 40px;
+              text-align: center;
+              /*color: white;*/
+              color: white !important;
+              font-size: 26px !important;
+            }
+            .banner .right h3 span{
+              margin-right:9px;
+            }
+
+        /* Quote Box */
+            .quote{
+              border:3px solid #1E162A;
+              text-align: center;
+              padding: 1em;
+            }
+            .quote h2{
+              font-family: GarLtDisp;
+              font-size: 36px;
+              color: #1E162A;
+            }
+            .quote h4{
+              font-family: GarItCapt;
+              font-size: 24px;
+              color: #1E162A;
+            }
 
 
   /* Coming Soon */
@@ -544,7 +637,9 @@
       width: 50%;
     }
     .full-grid .col-2{
-      width: 50%;
+      /*width: 50%;*/
+      width: 47%;
+      padding: 1em;
     }
   }
 
