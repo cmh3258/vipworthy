@@ -47,6 +47,9 @@
 
 
 /* Base Styles */
+    html{
+      background-color: #1E162A;
+    }
     body{
       background-color: white;
       margin:0;
@@ -108,6 +111,45 @@
       letter-spacing: 3px;
       color: white;
       text-transform: uppercase;
+    }
+
+    .hero{
+      background-image: url('images/ocean.png');
+    }
+
+    .categories .hero{
+       background-position-y: -14em;
+    }
+    /* hero images for the category pages */
+    #gifts-category .hero{
+      background-image: url('images/ocean.png');
+    }
+    #retail-category .hero{
+      background-image: url('images/ocean.png');
+    }
+
+    #sports-category .hero{
+      background-image: url('images/futbol.jpeg');
+    }
+    #travel-category .hero{
+      background-image: url('images/travel.jpeg');
+    }
+    #spa-category .hero{
+      background-image: url('images/spa.jpeg');
+    }
+    #festival-category .hero{
+      background-image: url('images/festival.jpeg');
+    }
+    #dining-category .hero{
+      background-image: url('images/food.jpeg');
+    }
+    #adventure-category .hero{
+      background-image: url('images/jamaica.jpeg');
+    }
+    #enter-category .hero{
+      background-image: url('images/entertainment/lca.jpg');
+       background-position-y: 0em;
+
     }
 
 
@@ -213,7 +255,7 @@
 
 
 /* categories */
-    #categories .hero{
+    .categories .hero{
       height: 22em;
     }
 
@@ -260,10 +302,11 @@
           bottom: 0;
           width: 100%;
           /*background-color: #F1B930;*/
+          margin-bottom: 22px;
         }
-        .previewBottomInfo h5{
+        /*.previewBottomInfo h5{*/
         }
-        .previewBottomInfo h5 a{
+        .previewBottomInfo a{
           color: white;
         }
         
@@ -285,6 +328,7 @@
     .fullDetails .previewTopInfo h3{
       font-family: AkzRegular;
       font-size: 20px;
+      padding: 0 10px;
     }
     .fullDetails .previewCenterInfo h3{ 
      font-family: AkzLightCond;
@@ -293,38 +337,47 @@
     .fullDetails .previewBottomInfo{
       font-family: GarItalic;
       font-size: 16px;
+      color: white;
     }
-    .fullDetails .previewBottomInfo h5{
+    .fullDetails .previewBottomInfo a{
       font-family: GarItalic;
       font-size: 16px;
       background: inherit;
       text-align: center;
       border: 1px solid white;
-      width: 80%;
-      margin: 0 auto;
-      padding: 1em;
-      margin-bottom: 1em;
+      /*width: 80%;*/
+      /*margin: 0 auto;*/
+      /*padding: 1em;*/
+      /*margin-bottom: 1em;*/
       color: white;
       transition: all .25s ease-in-out;
       -moz-transition: all .25s ease-in-out;
       -webkit-transition: all .25s ease-in-out;
+
+      margin: 0 auto;
+      text-align: center;
+      padding: 1em 8em;
+      margin-left: 6px;
+      /*margin-top: -1em;*/
+      background: inherit;
+      color:white;
     }
-    .fullDetails .previewBottomInfo h5:hover{
+    .fullDetails .previewBottomInfo a:hover{
       background-color: white;
       cursor: pointer;
       color: #1E162A !important;
     }
-    .fullDetails .previewBottomInfo h5 a{
+    .fullDetails .previewBottomInfo a{
       text-decoration: none;
       color: inherit;
     }
 
 
         /* categories */ 
-            /*#categories .previewExperience{
+            /*.categories .previewExperience{
               height: 26em;
             }
-            #categories .previewCategory:hover{
+            .categories .previewCategory:hover{
 
             }*/
             .overlay{
@@ -354,11 +407,26 @@
               opacity: 1;
             }
 
-            /*#categories .previewBottomInfo{
+            .overlay-black{
+              background-color: rgba(10,10,10,.5);
+              position: absolute;
+              top: 0;
+              left: 0;
+              color: #fff;
+              /*z-index: 100;*/
+              width: 100%;
+              height: 100%;
+              /*margin-top: 59px;*/
+              /*padding-top: 3em;*/
+              /*padding-left: 4em;*/
+              cursor: pointer;
+            }
+
+            /*.categories .previewBottomInfo{
               background-color: inherit;
               margin-bottom: 21px;
             }
-            #categories .previewBottomInfo h5{
+            .categories .previewBottomInfo h5{
               text-align: center;
               border: 2px solid white;
               padding: 1em;
@@ -366,11 +434,11 @@
               margin: 0 auto;
               border-radius: 32px;
           }
-          #categories .previewCenterInfo{
+          .categories .previewCenterInfo{
             margin-top: -72px;
             margin-left: -60px;
           }
-          #categories .previewCenterInfo h3{
+          .categories .previewCenterInfo h3{
             padding: 50px 45px;
             border: 2px solid white;
             border-radius: 100%;*/
@@ -467,7 +535,7 @@
         }
         #details .hero{
           margin-bottom: 0;
-          background-image: url('images/Kyle-Field-2.jpg');
+          background-image: url('images/sports/Kyle-Field-2.jpg');
         }
         .hero .infoRight{
           left: initial;
@@ -491,10 +559,10 @@
 
         /* Details List */
           #details ul{
-            padding-left: 11px;
+            /*padding-left: 11px;*/
           }
           #details li{
-            font-size: 16px;
+            /*font-size: 16px;*/
             color: #252525;
             line-height: 32px;
             font-family: GarCapt;
@@ -707,6 +775,9 @@
     }
     .hero > div{
       top:41%;
+    }
+    .categories  .hero > div{
+      top:32%; 
     }
     .row .col-3{
       width: 27.9%;
