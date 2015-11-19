@@ -125,7 +125,8 @@
       background-image: url('images/ocean.png');
     }
     #retail-category .hero{
-      background-image: url('images/ocean.png');
+      background-position-y: -10em;
+      background-image: url('images/shopping_images/hero1.jpg');
     }
 
     #sports-category .hero{
@@ -552,7 +553,7 @@
         #grandcaymen .hero{
           margin-bottom: 0;
           background-position: 0 -14em;
-          
+
           background-image: url('images/boat.jpeg');
         }
 
