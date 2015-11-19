@@ -530,13 +530,32 @@
 
 
     /* Detail Page */
-        #details main{
+        .details main{
            width: 87%;
         }
-        #details .hero{
+        .details .hero{
           margin-bottom: 0;
           background-image: url('images/sports/Kyle-Field-2.jpg');
         }
+
+        #safari .hero{
+          margin-bottom: 0;
+          background-position: 0 -14em;
+          background-image: url('images/adventure/safari_land.jpg');
+        }
+
+        #ecostay .hero{
+          margin-bottom: 0;
+          background-image: url('images/waterfall.jpeg');
+        }
+
+        #grandcaymen .hero{
+          margin-bottom: 0;
+          background-position: 0 -14em;
+          
+          background-image: url('images/boat.jpeg');
+        }
+
         .hero .infoRight{
           left: initial;
           right: -10%;
@@ -545,12 +564,12 @@
           float: right;
           width: 18em;
         }
-        #details h3{
+        .details h3{
           font-family: AkzLightCond;
           color: #252525;
           font-size: 36px;
         }
-        #details p{
+        .details p{
           font-size: 16px;
           color: #252525;
           font-family: GarRegular;
@@ -558,10 +577,10 @@
         }
 
         /* Details List */
-          #details ul{
+          .details ul{
             /*padding-left: 11px;*/
           }
-          #details li{
+          .details li{
             /*font-size: 16px;*/
             color: #252525;
             line-height: 32px;
